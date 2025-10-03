@@ -1,3 +1,5 @@
+#include <stdio.h>  
+
 int main() {
     // Carta 1
     char estado1;
