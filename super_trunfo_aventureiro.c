@@ -26,6 +26,7 @@ int main() {
     printf("=== Cadastro da Carta 1 ===\n");
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado1);
+      while (getchar() != '\n');
 
     printf("Digite o código da carta (ex: A01): ");
     scanf(" %s", codigo1);
@@ -47,12 +48,13 @@ int main() {
 
     // Cálculos da Carta 1
     densidade1 = populacao1 / area1;
-    pibPerCapita1 = (pib1 * 1000000000) / populacao1; // PIB convertido*
+    pibPerCapita1 = (pib1 * 1000000000.0f) / populacao1; // PIB convertido*
 
    // Entrada dos dados da Carta 2
     printf("\n=== Cadastro da Carta 2 ===\n");
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado2);
+      while (getchar() != '\n');
 
     printf("Digite o código da carta (ex: B02): ");
     scanf(" %s", codigo2);
@@ -74,7 +76,7 @@ int main() {
 
     // Cálculos da Carta 2
     densidade2 = populacao2 / area2;
-    pibPerCapita2 = (pib2 * 1000000000) / populacao2; // PIB convertido para reais
+    pibPerCapita2 = (pib2 * 1000000000.0f) / populacao2; // PIB convertido para reais
 
     // Exibição dos resultados
     printf("\n=== Carta 1 ===\n");
